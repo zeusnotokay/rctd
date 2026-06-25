@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RC THANE DOWNTOWN - More About Us</title>
+  <meta name="description" content="View statistics and frequently asked questions about the Rotaract Club of Thane Downtown.">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Styling for secondary image grid matching the Weebly carousel images */
+    .image-showcase {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+      margin-bottom: 3rem;
+    }
+    .image-showcase img {
+      border-radius: 1rem;
+      height: 250px;
+      width: 100%;
+      object-fit: cover;
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition-normal);
+    }
+    .image-showcase img:hover {
+      transform: scale(1.03);
+      box-shadow: var(--shadow-md);
+    }
+    @media (max-width: 768px) {
+      .image-showcase {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 480px) {
+      .image-showcase {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Page Hero Banner -->
+  <section class="page-hero animate-fade">
+    <div class="container">
+      <h1 class="gradient-text">More About Us</h1>
+      <p>Our journey in numbers, highlights of our projects, and frequently asked questions.</p>
+    </div>
+  </section>
+
+  <!-- Stats Trigger Block -->
+  <section class="section-padding stats-trigger">
+    <div class="container">
+      <div class="stats-banner text-center" style="margin-top: 0; background: linear-gradient(135deg, var(--primary), var(--secondary));">
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-num counter-number" data-target="300" data-suffix="+">0</div>
+            <div class="stat-label">MEMBERS ENROLLED</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num counter-number" data-target="5500" data-suffix="+">0</div>
+            <div class="stat-label">PROJECTS COMPLETED</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num counter-number" data-target="12" data-suffix="+">0</div>
+            <div class="stat-label">YEARS OF SERVICE</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Showcase Image Gallery -->
+  <section class="section-padding" style="background-color: white; padding-top: 2rem; padding-bottom: 2rem;">
+    <div class="container">
+      <div class="image-showcase animate-fade">
+        <img src="https://i.ibb.co/pvgddfLn/1.jpg" alt="Thane Downtown activities 1">
+        <img src="https://i.ibb.co/KkhHdNm/2.jpg" alt="Thane Downtown activities 2">
+        <img src="https://i.ibb.co/NdnjMPhd/3.jpg" alt="Thane Downtown activities 3">
+        <img src="https://i.ibb.co/VYThxZHX/4.jpg" alt="Thane Downtown activities 4">
+      </div>
+    </div>
+  </section>
+
+  <!-- Frequently Asked Questions -->
+  <section class="section-padding" style="background-color: white; border-top: 1px solid var(--border);">
+    <div class="container">
+      <div class="text-center animate-slide-up" style="max-width: 800px; margin: 0 auto 4rem auto;">
+        <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem;" class="gradient-text">Frequently Asked Questions</h2>
+        <p style="font-size: 1.15rem; color: var(--text-muted);">
+          Find answers to common queries regarding membership, club projects, and operations.
+        </p>
+      </div>
+
+      <!-- FAQ Accordions -->
+      <div class="faq-container animate-fade">
+        <!-- Question 1 -->
+        <div class="faq-item">
+          <div class="faq-header">
+            Who can join us?
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-body">
+            <p>
+              Anyone between the ages of 16 to 35, residing in Thane, Maharashtra, who is eager to grow as a leader, contribute to impactful initiatives, build meaningful networks, and become a part of a vibrant and supportive Rotaract family. If you're passionate about service, learning, and making a difference — you're welcome!
+            </p>
+          </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="faq-item">
+          <div class="faq-header">
+            What do we do?
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-body">
+            <p>
+              We conduct community service projects, professional development workshops, social events, cultural programs, and international collaborations. It's all about creating impact while having fun and building friendships for life.
+            </p>
+          </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="faq-item">
+          <div class="faq-header">
+            How can I join?
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-body">
+            <p>
+              Just reach out to us on Instagram, Facebook, or email — or attend one of our meetings. We'll guide you through the simple membership process and welcome you onboard.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Join CTA Section -->
+  <section class="section-padding" style="background: linear-gradient(135deg, rgba(157, 23, 77, 0.05), rgba(30, 58, 170, 0.05)); border-top: 1px solid var(--border);">
+    <div class="container text-center animate-slide-up" style="max-width: 700px;">
+      <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem;" class="gradient-text">Be Part of the Change</h2>
+      <p style="font-size: 1.2rem; color: var(--text-muted); margin-bottom: 2.5rem;">
+        Join a community of passionate young leaders dedicated to service, growth, and friendships that last a lifetime.
+      </p>
+      <a href="contact-us.html" class="btn btn-primary">Join Us Today</a>
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <script src="shared.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

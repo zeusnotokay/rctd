@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RCTD PLAY - Projects Movie Mode</title>
+  <meta name="description" content="Browse Rotaract Club of Thane Downtown projects in a high-fidelity Netflix-style interface.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="netflix-body">
+
+  <!-- Netflix Navbar -->
+  <nav class="netflix-header-nav">
+    <div class="netflix-nav-container">
+      <div class="netflix-nav-left">
+        <a href="index.html" class="netflix-logo">RCTD PLAY</a>
+        <ul class="netflix-menu">
+          <li class="netflix-menu-item"><a href="index.html">Home</a></li>
+          <li class="netflix-menu-item active"><a href="projects-movie.html">Series</a></li>
+          <li class="netflix-menu-item"><a href="projects.html">Classic View</a></li>
+        </ul>
+      </div>
+      <div class="netflix-nav-right">
+        <span style="cursor: pointer; padding: 0.5rem;">🔍</span>
+        <span style="cursor: pointer; padding: 0.5rem;">🔔</span>
+        <div class="netflix-profile-icon">R</div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Netflix Hero Billboard -->
+  <section class="billboard-hero" style="background-image: url('https://rc-thanedowntown.weebly.com/uploads/1/1/4/1/114181425/untitled-design.jpg');">
+    <div class="billboard-content">
+      <div class="billboard-category">🏆 RCTD ORIGINAL SERIES</div>
+      <h1 class="billboard-title">RaasLeela</h1>
+      <p class="billboard-desc">
+        A flagship cultural celebration that brings the Thane community together through the joy of Garba. Join the festivity that funds our Jaipur Foot Donation project, merging cultural tradition and social service.
+      </p>
+      <div class="billboard-btn-group">
+        <button class="netflix-btn netflix-btn-play" data-id="raasleela">▶ Play</button>
+        <button class="netflix-btn netflix-btn-info" data-id="raasleela">ℹ More Info</button>
+      </div>
+    </div>
+    <div class="billboard-badge">U/A 13+</div>
+  </section>
+
+  <!-- Movies Rows -->
+  <main class="movie-rows-container">
+    
+    <!-- Row 1: Trending Now -->
+    <section class="movie-row">
+      <h2 class="movie-row-title">Trending Now</h2>
+      <div class="movie-row-wrapper">
+        <button class="row-arrow row-arrow-left" aria-label="Scroll left">&#10094;</button>
+        <div class="movie-cards-container">
+          
+          <!-- Raasleela -->
+          <div class="movie-card" data-id="raasleela">
+            <img src="https://rc-thanedowntown.weebly.com/uploads/1/1/4/1/114181425/untitled-design.jpg" alt="RaasLeela cover">
+            <div class="movie-card-info-overlay">
+              <h4 class="movie-card-title">RaasLeela</h4>
+              <div class="movie-card-meta">
+                <span class="movie-card-match">98% Match</span>
+                <span class="movie-card-maturity">PG-13</span>
+                <span class="movie-card-duration">1 Season</span>
+              </div>
+              <div class="movie-card-genres">Garba • Culture • Celebration</div>
+            </div>
+          </div>
+
+          <!-- Sports Extravaganza -->
+          <div class="movie-card" data-id="sports-extravaganza">
+            <img src="https://rc-thanedowntown.weebly.com/uploads/1/1/4/1/114181425/3fe634d3-3ecf-4e0c-a31d-5e9a07638559.jpg" alt="Sports Extravaganza cover">
+            <div class="movie-card-info-overlay">
+              <h4 class="movie-card-title">Sports Extravaganza</h4>
+              <div class="movie-card-meta">
+                <span class="movie-card-match">97% Match</span>
+                <span class="movie-card-maturity">PG</span>
+                <span class="movie-card-duration">2h 10m</span>
+              </div>
+              <div class="movie-card-genres">Action • Sports • Fitness</div>
+            </div>
+          </div>
+
+          <!-- Eloquence -->
+          <div class="movie-card" data-id="eloquence">
+            <img src="https://rc-thanedowntown.weebly.com/uploads/1/1/4/1/114181425/screenshot-20230727-223512-instagram.jpg" alt="Eloquence cover">
+            <div class="movie-card-info-overlay">
+              <h4 class="movie-card-title">Eloquence</h4>
+              <div class="movie-card-meta">
+                <span class="movie-card-match">96% Match</span>
+                <span class="movie-card-maturity">PG</span>
+                <span class="movie-card-duration">1h 45m</span>
+              </div>
+              <div class="movie-card-genres">Competition • Soft-Skills • Inspiring</div>
+            </div>
+          </div>
+
+          <!-- Circle of Love -->
+          <div class="movie-card" data-id="circle-of-love">
+            <img src="https://rc-thanedowntown.weebly.com/uploads/1/1/4/1/114181425/circle-of-love.jpg" alt="Circle of Love cover">
+            <div class="movie-card-info-overlay">
+              <h4 class="movie-card-title">Circle Of Love</h4>
+              <div class="movie-card-meta">
+                <span class="movie-card-match">99% Match</span>
+                <span class="movie-card-maturity">16+</span>
+                <span class="movie-card-duration">45m</span>
+              </div>
+              <div class="movie-card-genres">Documentary • Heartfelt • Social Action</div>
+            </div>
+          </div>
+
+        </div>
+        <button class="row-arrow row-arrow-right" aria-label="Scroll right">&#10095;</button>
+      </div>
+    </section>
+
+    <!-- Row 2: Documentaries & Social Dramas -->
+    <section class="movie-row">
+      <h2 class="movie-row-title">Documentaries & Social Impact</h2>
+      <div class="movie-row-wrapper">
+        <button class="row-arrow row-arrow-left" aria-label="Scroll left">&#10094;</button>
+        <div class="movie-cards-container">
+          
+          <!-- Jaipur Foot -->
+          <div class="movie-card" data-id="jaipur-foot">
+            <img src="https://rc-thanedowntown.weebly.com/uploads/1/1/4/1/114181425/img-7505.jpg" alt="Jaipur Foot Donation cover">
+            <div class="movie-card-info-overlay">
+              <h4 class="movie-card-title">Jaipur Foot Donation</h4>
+              <div class="movie-card-meta">
+                <span class="movie-card-match">99% Match</span>
+                <span class="movie-card-maturity">G</span>
+                <span class="movie-card-duration">1h 30m</span>
+              </div>
+              <div class="movie-card-genres">Welfare • Hope • Emotional</div>
+            </div>
+          </div>
+
+          <!-- Rakshapatra -->
+          <div class="movie-card" data-id="rakshapatra">
+            <img src="https://rc-thanedowntown.weebly.com/uploads/1/1/4/1/114181425/20220801-155811.jpg" alt="Rakshapatra cover">
+            <div class="movie-card-info-overlay">
+              <h4 class="movie-card-title">Rakshapatra</h4>
+              <div class="movie-card-meta">
+                <span class="movie-card-match">95% Match</span>
+                <span class="movie-card-maturity">G</span>
+                <span class="movie-card-duration">1 Season</span>
+              </div>
+              <div class="movie-card-genres">Patriotism • Family • Emotion</div>
+            </div>
+          </div>
+
+          <!-- Secret Santa -->
+          <div class="movie-card" data-id="secret-santa">
+            <img src="https://rc-thanedowntown.weebly.com/uploads/1/1/4/1/114181425/img-20230130-wa0091.jpg" alt="Secret Santa cover">
+            <div class="movie-card-info-overlay">
+              <h4 class="movie-card-title">Secret Santa</h4>
+              <div class="movie-card-meta">
+                <span class="movie-card-match">94% Match</span>
+                <span class="movie-card-maturity">G</span>
+                <span class="movie-card-duration">1h 15m</span>
+              </div>
+              <div class="movie-card-genres">Holiday • Family • Joy</div>
+            </div>
+          </div>
+
+        </div>
+        <button class="row-arrow row-arrow-right" aria-label="Scroll right">&#10095;</button>
+      </div>
+    </section>
+
+    <!-- Row 3: Fan Favorites -->
+    <section class="movie-row">
+      <h2 class="movie-row-title">Fan Favorites</h2>
+      <div class="movie-row-wrapper">
+        <button class="row-arrow row-arrow-left" aria-label="Scroll left">&#10094;</button>
+        <div class="movie-cards-container">
+          
+          <!-- Rock Rotaract -->
+          <div class="movie-card" data-id="rock-rotaract">
+            <img src="https://rc-thanedowntown.weebly.com/uploads/1/1/4/1/114181425/img-20230130-wa0111.jpg" alt="Rock Rotaract cover">
+            <div class="movie-card-info-overlay">
+              <h4 class="movie-card-title">Rock Rotaract</h4>
+              <div class="movie-card-meta">
+                <span class="movie-card-match">92% Match</span>
+                <span class="movie-card-maturity">13+</span>
+                <span class="movie-card-duration">1h 50m</span>
+              </div>
+              <div class="movie-card-genres">Concert • Musical • Fellowship</div>
+            </div>
+          </div>
+
+          <!-- Fellowship Outings -->
+          <div class="movie-card" data-id="fellowship-outings">
+            <img src="https://rc-thanedowntown.weebly.com/uploads/1/1/4/1/114181425/bowling.jpg" alt="Fellowship Outings cover">
+            <div class="movie-card-info-overlay">
+              <h4 class="movie-card-title">Fellowship Outings</h4>
+              <div class="movie-card-meta">
+                <span class="movie-card-match">93% Match</span>
+                <span class="movie-card-maturity">PG</span>
+                <span class="movie-card-duration">1 Season</span>
+              </div>
+              <div class="movie-card-genres">Adventure • Travel • Comedy</div>
+            </div>
+          </div>
+
+        </div>
+        <button class="row-arrow row-arrow-right" aria-label="Scroll right">&#10095;</button>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Netflix Details/Play Modal -->
+  <div class="netflix-modal">
+    <div class="netflix-modal-box">
+      <button class="netflix-modal-close" aria-label="Close Details Modal">&times;</button>
+      
+      <div class="netflix-modal-video">
+        <img class="netflix-modal-video-bg" src="" alt="Backdrop image">
+        <div class="netflix-modal-video-overlay">
+          <h2 class="netflix-modal-title">RaasLeela</h2>
+        </div>
+      </div>
+      
+      <div class="netflix-modal-body">
+        <div class="netflix-modal-body-left">
+          <div class="netflix-modal-stats">
+            <span class="netflix-modal-match">98% Match</span>
+            <span class="netflix-modal-year">2025</span>
+            <span class="netflix-modal-maturity">PG-13</span>
+            <span class="netflix-modal-duration">1 Season</span>
+            <span style="border: 1px solid rgba(255,255,255,0.2); padding:0 0.25rem; font-size:0.75rem; color:#aaa; font-weight:700;">HD</span>
+          </div>
+          <p class="netflix-modal-desc">
+            RaasLeela is a flagship cultural celebration that brings the Thane community together through the joy of Garba. Join the festivity that funds our Jaipur Foot Donation project, merging cultural tradition and social service.
+          </p>
+        </div>
+        
+        <div class="netflix-modal-body-right">
+          <div class="netflix-modal-meta-item">
+            <span>Genres:</span> <span class="netflix-modal-genres-text">Garba, Culture, Celebration</span>
+          </div>
+          <div class="netflix-modal-meta-item">
+            <span>Featuring:</span> Rtr. Kshitij Raut, Rtr. Rishita Harel, Rtr. Sunayna Anand
+          </div>
+          <div class="netflix-modal-meta-item">
+            <span>This Initiative is:</span> Exciting, Heartfelt, Inclusivity
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="main.js"></script>
+</body>
+</html>
