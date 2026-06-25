@@ -256,7 +256,7 @@ function initChatbotUI() {
         <div class="chatbot-header-info">
           <div class="chatbot-avatar">R</div>
           <div>
-            <div class="chatbot-name">RCTD Advisor</div>
+            <div class="chatbot-name">RCTD ka Chotu</div>
             <div class="chatbot-status"><span class="status-dot"></span>Online • RAG Assistant</div>
           </div>
         </div>
