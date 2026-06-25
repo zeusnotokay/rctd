@@ -290,7 +290,8 @@ function initNetflixMode() {
       maturity: 'PG-13',
       genres: 'Musical, Culture, Celebration',
       desc: 'RaasLeela is a flagship cultural celebration designed to bring the Thane community together through the joy of Garba. It serves as one of our biggest public-facing initiatives, celebrating culture and tradition. The proceeds raised are donated to our Jaipur Foot Donation project, making RaasLeela a perfect blend of celebration and service.',
-      backdrop: 'https://rc-thanedowntown.weebly.com/uploads/1/1/4/1/114181425/untitled-design.jpg'
+      backdrop: 'https://rc-thanedowntown.weebly.com/uploads/1/1/4/1/114181425/untitled-design.jpg',
+      youtubeUrl: 'https://www.youtube.com/@RotaractClubofThaneDowntown/search?query=RaasLeela'
     },
     'eloquence': {
       title: 'Eloquence',
@@ -300,7 +301,8 @@ function initNetflixMode() {
       maturity: 'PG',
       genres: 'Competition, Soft-Skills, Inspiring',
       desc: 'An elocution, debate, and essay writing competition held across school classes in Thane aimed at building children\'s public speaking confidence and soft skills.',
-      backdrop: 'https://rc-thanedowntown.weebly.com/uploads/1/1/4/1/114181425/screenshot-20230727-223512-instagram.jpg'
+      backdrop: 'https://rc-thanedowntown.weebly.com/uploads/1/1/4/1/114181425/screenshot-20230727-223512-instagram.jpg',
+      youtubeUrl: 'https://www.youtube.com/@RotaractClubofThaneDowntown/search?query=Eloquence'
     },
     'circle-of-love': {
       title: 'Circle Of Love',
@@ -310,7 +312,8 @@ function initNetflixMode() {
       maturity: '16+',
       genres: 'Documentary, Heartfelt, Social Action',
       desc: 'Uplifting the transgender community in the Thane region with annual monsoon support, providing food rations, raincoats, sarees, and water purifiers.',
-      backdrop: 'https://rc-thanedowntown.weebly.com/uploads/1/1/4/1/114181425/circle-of-love.jpg'
+      backdrop: 'https://rc-thanedowntown.weebly.com/uploads/1/1/4/1/114181425/circle-of-love.jpg',
+      youtubeUrl: 'https://www.youtube.com/@RotaractClubofThaneDowntown/search?query=Circle+of+Love'
     },
     'sports-extravaganza': {
       title: 'Sports Extravaganza',
@@ -320,7 +323,8 @@ function initNetflixMode() {
       maturity: 'PG',
       genres: 'Action, Sports, Teamwork',
       desc: 'Promoting fitness and teamwork in Thane by hosting simultaneous tournaments across 14+ sports over two weekends, open to all age groups.',
-      backdrop: 'https://rc-thanedowntown.weebly.com/uploads/1/1/4/1/114181425/3fe634d3-3ecf-4e0c-a31d-5e9a07638559.jpg'
+      backdrop: 'https://rc-thanedowntown.weebly.com/uploads/1/1/4/1/114181425/3fe634d3-3ecf-4e0c-a31d-5e9a07638559.jpg',
+      youtubeUrl: 'https://www.youtube.com/@RotaractClubofThaneDowntown/search?query=Sports'
     },
     'jaipur-foot': {
       title: 'Jaipur Foot Donation',
@@ -330,7 +334,8 @@ function initNetflixMode() {
       maturity: 'G',
       genres: 'Social Welfare, Emotional, Biography',
       desc: 'Providing prosthetic legs to amputees to help them walk again and regain independence after accidents or disabilities.',
-      backdrop: 'https://rc-thanedowntown.weebly.com/uploads/1/1/4/1/114181425/img-7505.jpg'
+      backdrop: 'https://rc-thanedowntown.weebly.com/uploads/1/1/4/1/114181425/img-7505.jpg',
+      youtubeUrl: 'https://www.youtube.com/watch?v=f-gL4zUj-oQ'
     },
     'rakshapatra': {
       title: 'Rakshapatra',
@@ -339,8 +344,9 @@ function initNetflixMode() {
       duration: '1 Season',
       maturity: 'G',
       genres: 'Patriotic, Emotion, Family',
-      desc: 'Connecting school children and active soldiers on Rakshabandhan through letters of appreciation. Sending over 1,00,000 letters to army base camps annually.',
-      backdrop: 'https://rc-thanedowntown.weebly.com/uploads/1/1/4/1/114181425/20220801-155811.jpg'
+      desc: 'Connecting school children and active soldiers on Rakshabandhan through letters of appreciation. Sending over 1,0,000 letters to army base camps annually.',
+      backdrop: 'https://rc-thanedowntown.weebly.com/uploads/1/1/4/1/114181425/20220801-155811.jpg',
+      youtubeUrl: 'https://www.youtube.com/@RotaractClubofThaneDowntown/search?query=Rakshapatra'
     },
     'secret-santa': {
       title: 'Secret Santa',
@@ -350,7 +356,8 @@ function initNetflixMode() {
       maturity: 'G',
       genres: 'Holiday, Family, Joy',
       desc: 'Spreading festive warmth and joy by distributing gifts and sharing Christmas cheer with orphaned children.',
-      backdrop: 'https://rc-thanedowntown.weebly.com/uploads/1/1/4/1/114181425/img-20230130-wa0091.jpg'
+      backdrop: 'https://rc-thanedowntown.weebly.com/uploads/1/1/4/1/114181425/img-20230130-wa0091.jpg',
+      youtubeUrl: 'https://www.youtube.com/@RotaractClubofThaneDowntown/search?query=Secret+Santa'
     },
     'rock-rotaract': {
       title: 'Rock Rotaract',
@@ -360,7 +367,8 @@ function initNetflixMode() {
       maturity: '13+',
       genres: 'Musical, Concert, Fellowship',
       desc: 'A grand youth music festival promoting local bands while raising funds and awareness for social causes in the community.',
-      backdrop: 'https://rc-thanedowntown.weebly.com/uploads/1/1/4/1/114181425/img-20230130-wa0111.jpg'
+      backdrop: 'https://rc-thanedowntown.weebly.com/uploads/1/1/4/1/114181425/img-20230130-wa0111.jpg',
+      youtubeUrl: 'https://www.youtube.com/@RotaractClubofThaneDowntown/search?query=Rock+Rotaract'
     },
     'fellowship-outings': {
       title: 'Fellowship Outings',
@@ -370,7 +378,8 @@ function initNetflixMode() {
       maturity: 'PG',
       genres: 'Adventure, Comedy, Travel',
       desc: 'Treks, outings, and bowling fellowship events designed to build deep friendships and coordinate strategies among club members.',
-      backdrop: 'https://rc-thanedowntown.weebly.com/uploads/1/1/4/1/114181425/bowling.jpg'
+      backdrop: 'https://rc-thanedowntown.weebly.com/uploads/1/1/4/1/114181425/bowling.jpg',
+      youtubeUrl: 'https://www.youtube.com/@RotaractClubofThaneDowntown/search?query=Fellowship'
     }
   };
 
@@ -401,6 +410,16 @@ function initNetflixMode() {
     if (modalDuration) modalDuration.textContent = movie.duration;
     if (modalGenres) modalGenres.textContent = movie.genres;
     
+    const modalPlayBtn = modal.querySelector('.netflix-modal-play-btn');
+    if (modalPlayBtn) {
+      if (movie.youtubeUrl) {
+        modalPlayBtn.setAttribute('href', movie.youtubeUrl);
+        modalPlayBtn.style.display = 'inline-flex';
+      } else {
+        modalPlayBtn.style.display = 'none';
+      }
+    }
+    
     modal.classList.add('open');
     document.body.style.overflow = 'hidden';
   };
@@ -425,13 +444,18 @@ function initNetflixMode() {
   });
 
   // Attach billboard hero buttons
-  const playBtn = document.querySelector('.netflix-btn-play');
+  const heroPlayBtn = document.querySelector('.billboard-hero .netflix-btn-play');
   const infoBtn = document.querySelector('.netflix-btn-info');
   
-  if (playBtn) {
-    playBtn.addEventListener('click', () => {
-      const movieId = playBtn.getAttribute('data-id');
-      if (movieId) openModal(movieId);
+  if (heroPlayBtn) {
+    heroPlayBtn.addEventListener('click', () => {
+      const movieId = heroPlayBtn.getAttribute('data-id');
+      const movie = movieDb[movieId];
+      if (movie && movie.youtubeUrl) {
+        window.open(movie.youtubeUrl, '_blank');
+      } else if (movieId) {
+        openModal(movieId);
+      }
     });
   }
   
