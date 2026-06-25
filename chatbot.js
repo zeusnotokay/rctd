@@ -205,7 +205,7 @@ function generateResponse(query) {
   const greetings = ["hi", "hello", "hey", "hola", "greetings", "wasup", "yo", "who are you", "what is this"];
   if (greetings.includes(cleanQuery)) {
     return {
-      text: "Hello! I am the **RCTD Advisor**, a chatbot trained to answer questions about the **Rotaract Club of Thane Downtown** and Rotaract globally. You can ask me about our flagship projects (like RaasLeela and Jaipur Foot Donation), our officers, our calendar, or how to join us!",
+      text: "Hello! I am **RCTD ka Chotu**, a chatbot trained to answer questions about the **Rotaract Club of Thane Downtown** and Rotaract globally. You can ask me about our flagship projects (like RaasLeela and Jaipur Foot Donation), our officers, our calendar, or how to join us!",
       source: null
     };
   }
@@ -267,7 +267,7 @@ function initChatbotUI() {
       <div class="chatbot-messages" id="chatbotMessages">
         <div class="chat-message bot-msg">
           <div class="chat-msg-bubble">
-            Hello! I am your <strong>RCTD Advisor</strong>. Ask me anything about Rotaract or the Rotaract Club of Thane Downtown!
+            Hello! I am <strong>RCTD ka Chotu</strong>. Ask me anything about Rotaract or the Rotaract Club of Thane Downtown!
           </div>
         </div>
       </div>
