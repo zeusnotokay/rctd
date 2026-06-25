@@ -291,7 +291,7 @@ function initNetflixMode() {
       genres: 'Musical, Culture, Celebration',
       desc: 'RaasLeela is a flagship cultural celebration designed to bring the Thane community together through the joy of Garba. It serves as one of our biggest public-facing initiatives, celebrating culture and tradition. The proceeds raised are donated to our Jaipur Foot Donation project, making RaasLeela a perfect blend of celebration and service.',
       backdrop: 'https://rc-thanedowntown.weebly.com/uploads/1/1/4/1/114181425/untitled-design.jpg',
-      youtubeUrl: 'https://www.youtube.com/@RotaractClubofThaneDowntown/search?query=RaasLeela'
+      youtubeUrl: 'https://youtube.com/shorts/Y6lAiOWaQ8I?si=O9Y2xzG8PzYJNzgK'
     },
     'eloquence': {
       title: 'Eloquence',
@@ -335,7 +335,7 @@ function initNetflixMode() {
       genres: 'Social Welfare, Emotional, Biography',
       desc: 'Providing prosthetic legs to amputees to help them walk again and regain independence after accidents or disabilities.',
       backdrop: 'https://rc-thanedowntown.weebly.com/uploads/1/1/4/1/114181425/img-7505.jpg',
-      youtubeUrl: 'https://www.youtube.com/watch?v=f-gL4zUj-oQ'
+      youtubeUrl: 'https://youtu.be/I4wlivXJ8Ws'
     },
     'rakshapatra': {
       title: 'Rakshapatra',
