@@ -27,6 +27,9 @@ document.addEventListener('DOMContentLoaded', () => {
   
   // 5. Set Active Page
   setActivePage();
+
+  // 6. Initialize Custom Cursor Follower
+  initCustomCursor();
 });
 
 function injectHeader() {
@@ -181,5 +184,106 @@ function setActivePage() {
     } else {
       item.classList.remove('active');
     }
+  });
+}
+
+function initCustomCursor() {
+  // Only initialize on desktop devices with hover support (prevent touch breakdown)
+  if (window.matchMedia("(hover: none)").matches) return;
+
+  // Create cursor elements in DOM
+  const cursorHtml = `
+    <div class="custom-cursor-dot"></div>
+    <div class="custom-cursor-ring"></div>
+  `;
+  document.body.insertAdjacentHTML('beforeend', cursorHtml);
+
+  const dot = document.querySelector('.custom-cursor-dot');
+  const ring = document.querySelector('.custom-cursor-ring');
+
+  if (!dot || !ring) return;
+
+  // Activate cursor styles on body
+  document.body.classList.add('custom-cursor-active');
+
+  let mouseX = 0, mouseY = 0;
+  let dotX = 0, dotY = 0;
+  let ringX = 0, ringY = 0;
+  let isMoving = false;
+
+  // Track cursor coordinates
+  window.addEventListener('mousemove', (e) => {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+    
+    // Fade in cursor elements on first move
+    if (!isMoving) {
+      dot.style.opacity = '1';
+      ring.style.opacity = '1';
+      isMoving = true;
+    }
+  });
+
+  // Mouse leave browser viewport handling
+  document.addEventListener('mouseleave', () => {
+    dot.style.opacity = '0';
+    ring.style.opacity = '0';
+    isMoving = false;
+  });
+
+  document.addEventListener('mouseenter', () => {
+    dot.style.opacity = '1';
+    ring.style.opacity = '1';
+    isMoving = true;
+  });
+
+  // Animation frame tick for smooth LERP inertia
+  const tick = () => {
+    // Lerp formula: current + (target - current) * factor
+    dotX += (mouseX - dotX) * 0.3;
+    dotY += (mouseY - dotY) * 0.3;
+
+    ringX += (mouseX - ringX) * 0.15;
+    ringY += (mouseY - ringY) * 0.15;
+
+    // Apply hardware-accelerated translations
+    dot.style.transform = `translate3d(${dotX}px, ${dotY}px, 0) translate(-50%, -50%)`;
+    ring.style.transform = `translate3d(${ringX}px, ${ringY}px, 0) translate(-50%, -50%)`;
+
+    requestAnimationFrame(tick);
+  };
+  requestAnimationFrame(tick);
+
+  // Hover transitions delegation
+  document.addEventListener('mouseover', (e) => {
+    const target = e.target;
+    // Check if element or parent is interactive
+    const isInteractive = target.closest('a, button, .movie-card, .suggestion-chip, .hamburger, .slider-dot, .slider-arrow, .gallery-item');
+    
+    if (isInteractive) {
+      dot.classList.add('hover');
+      ring.classList.add('hover');
+    }
+  });
+
+  document.addEventListener('mouseout', (e) => {
+    const target = e.target;
+    const isInteractive = target.closest('a, button, .movie-card, .suggestion-chip, .hamburger, .slider-dot, .slider-arrow, .gallery-item');
+    
+    if (isInteractive) {
+      dot.classList.remove('hover');
+      ring.classList.remove('hover');
+    }
+  });
+
+  // Click pulse animation states
+  document.addEventListener('mousedown', () => {
+    dot.classList.add('active');
+    ring.classList.add('active');
+  });
+
+  document.addEventListener('mouseup', () => {
+    dot.classList.remove('active');
+    ring.classList.remove('active');
   });
 }
