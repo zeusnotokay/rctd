@@ -317,13 +317,26 @@ function initChatbotUI() {
   toggleBtn.addEventListener('click', toggleWindow);
   closeBtn.addEventListener('click', () => windowPane.classList.remove('open'));
 
+  // HTML escaping helper for XSS prevention
+  const escapeHTML = (str) => {
+    return str
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#039;');
+  };
+
   // Append new chat bubble
   const appendMessage = (text, isUser = false, sourceObj = null) => {
     const messageDiv = document.createElement('div');
     messageDiv.classList.add('chat-message', isUser ? 'user-msg' : 'bot-msg');
     
+    // First escape raw content to block HTML/XSS injection
+    const escapedText = escapeHTML(text);
+    
     // Markdown replacement helper (bold text replacement only)
-    let formattedText = text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+    let formattedText = escapedText.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
     formattedText = formattedText.replace(/\n/g, '<br>');
 
     let sourceHtml = "";
