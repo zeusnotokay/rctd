@@ -2212,7 +2212,7 @@ body.custom-cursor-active * {
 .custom-cursor-dot {
   width: 8px;
   height: 8px;
-  background-color: var(--primary);
+  background-color: #ffffff;
   border-radius: 50%;
   position: fixed;
   top: 0;
@@ -2221,14 +2221,15 @@ body.custom-cursor-active * {
   z-index: 99999;
   opacity: 0;
   transform: translate3d(0, 0, 0) translate(-50%, -50%);
-  transition: width 0.2s ease, height 0.2s ease, background-color 0.2s ease, opacity 0.25s ease;
+  transition: opacity 0.2s ease, background-color 0.2s ease;
   will-change: transform;
+  mix-blend-mode: difference;
 }
 
 .custom-cursor-ring {
-  width: 36px;
-  height: 36px;
-  border: 1.5px solid var(--primary);
+  width: 32px;
+  height: 32px;
+  border: 1px solid #ffffff;
   border-radius: 50%;
   position: fixed;
   top: 0;
@@ -2237,37 +2238,32 @@ body.custom-cursor-active * {
   z-index: 99998;
   opacity: 0;
   transform: translate3d(0, 0, 0) translate(-50%, -50%);
-  transition: width 0.3s cubic-bezier(0.165, 0.84, 0.44, 1), 
-              height 0.3s cubic-bezier(0.165, 0.84, 0.44, 1), 
-              border-color 0.3s ease, 
+  transition: width 0.35s cubic-bezier(0.215, 0.61, 0.355, 1), 
+              height 0.35s cubic-bezier(0.215, 0.61, 0.355, 1), 
               background-color 0.3s ease, 
+              border-color 0.3s ease, 
               opacity 0.25s ease;
   will-change: transform;
+  mix-blend-mode: difference;
 }
 
-/* Hover Interactivity States */
+/* Hover Interactivity - Difference Blending Magnifier */
 .custom-cursor-dot.hover {
-  width: 6px;
-  height: 6px;
-  background-color: var(--secondary);
+  opacity: 0 !important;
 }
 
 .custom-cursor-ring.hover {
-  width: 56px;
-  height: 56px;
-  border-color: var(--secondary);
-  background-color: rgba(30, 58, 138, 0.1); /* transparent secondary blend */
+  width: 54px;
+  height: 54px;
+  background-color: #ffffff;
+  border-color: #ffffff;
 }
 
-/* Click Active States */
-.custom-cursor-dot.active {
-  transform: translate3d(0, 0, 0) translate(-50%, -50%) scale(1.6);
-  background-color: var(--primary);
-}
-
+/* Click Active States - Click Grip */
 .custom-cursor-ring.active {
-  transform: translate3d(0, 0, 0) translate(-50%, -50%) scale(0.65);
-  border-color: var(--primary);
-  background-color: rgba(157, 23, 77, 0.2);
+  width: 24px;
+  height: 24px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-color: #ffffff;
 }
 
