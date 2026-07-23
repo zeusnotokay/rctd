@@ -121,8 +121,8 @@ const rctdKnowledgeBase = [
   {
     id: "team-board",
     title: "Club Officers & Board of Directors (BOD)",
-    keywords: ["president", "secretary", "vice", "treasurer", "sergeant", "board", "directors", "bod", "leaders", "leadership", "kshitij", "raut", "rishita", "harel", "sunayna", "rctd", "club"],
-    content: "The current board features Rtr. Kshitij Raut (President), Rtr. Rishita Harel (Secretary), and Rtr. Sunayna Anand. The Board of Directors (BOD) coordinates with various avenues of service including Community Service, Club Service, International Service, and Professional Development.",
+    keywords: ["president", "secretary", "vice", "treasurer", "sergeant", "board", "directors", "bod", "leaders", "leadership", "shlok", "sharma", "shruti", "aayesha", "rctd", "club"],
+    content: "The core team features Rtr. Shlok Sharma (President), Rtr. Shruti K (Secretary), Rtr. Aayesha Kaliwala (Jt. Secretary), Rtr. Dhruv Krishnan (Treasurer), and Rtr. Kshitij Raut (IPP). The Board of Directors (BOD) coordinates with various avenues of service including Community Service, Club Service, International Service, and Professional Development.",
     source: "our-team.html",
     sourceName: "Our Team: Directors"
   },
