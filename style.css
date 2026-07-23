@@ -671,8 +671,16 @@ ul {
 
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(12, 1fr);
   gap: 2rem;
+}
+
+.team-card-span-4 {
+  grid-column: span 4;
+}
+
+.team-card-span-3 {
+  grid-column: span 3;
 }
 
 .team-card {
@@ -1210,6 +1218,10 @@ footer {
   }
   .team-grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+  .team-card-span-4,
+  .team-card-span-3 {
+    grid-column: auto;
   }
 }
 
